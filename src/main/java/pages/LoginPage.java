@@ -18,7 +18,7 @@ public class LoginPage extends PageBase
 	WebElement submitEmail ;
 	
 	public void openRegForm() {
-		createEmail.sendKeys("vtest1@mailinator.com");
+		createEmail.sendKeys("vtest13@mailinator.com");
 		submitEmail.click();
 	}
 }
