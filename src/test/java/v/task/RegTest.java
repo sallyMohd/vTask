@@ -23,6 +23,9 @@ public class RegTest extends testBase
 		regObject = new UserReg(driver);
 		regObject.userRegistration("Test", "user", "test123", "test,address", "city", "12345", "123456789");
 		
+		//verify that the user is redirected to home page and my account exists
+		homeObject.userRegSuccess();
+		
 
 	}
 }
