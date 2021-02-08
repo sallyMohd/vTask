@@ -15,6 +15,12 @@ public class HomePage extends PageBase
 		
 		@FindBy(xpath = "//*[@id=\"block_top_menu\"]/ul/li[1]/a")
 		WebElement tab ;
+		
+		@FindBy(xpath = "/html/body/div/div[1]/header/div[2]/div/div/nav/div[1]/a/span")
+		WebElement userName ;
+		
+		@FindBy(xpath = "/html/body/div/div[2]/div/div[1]/span[2]")
+		WebElement myAccount ;
 	
 		public void openRegPage() {
 			
@@ -24,6 +30,13 @@ public class HomePage extends PageBase
 		public void openWomenTab() {
 			tab.click();
 			
+		}
+		public void userLoginSuccess() {
+			userName.isDisplayed();
+		}
+		
+		public void userRegSuccess() {
+			myAccount.isDisplayed();
 		}
 
 }
