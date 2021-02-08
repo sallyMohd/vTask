@@ -17,6 +17,9 @@ public class LoginTest extends testBase
 		homeObject.openRegPage();
 		loginobject = new LoginFromLoginPage(driver);
 		loginobject.UserLogin("test12345@mailinator.com", "test123");
+		
+		// verify that the user name exists in home page after login
+		homeObject.userLoginSuccess();
 	}
 	
 }
